@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <input id="numero-1" type="number" name="número" min="0" value="0" />
+        <input id="numero-2" type="number" name="número" min="0" value="0" />
+      </div>
+      <h1 id="resultado">0</h1>
+      <div>
+        <button onclick="operacion('resta')">-</button>
+        <button onclick="operacion('suma')">+</button>
+        <button onclick="operacion('multiplicacion')">*</button>
+        <button onclick="operacion('division')">/</button>
+        <button onclick="limpiar()">C</button>
+      </div>
+    </main>
+    <script src="./calculadora.js"></script>
+  </body>
+</html>
