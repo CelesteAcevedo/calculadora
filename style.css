@@ -3,11 +3,11 @@ html {
   height: 100%;
 }
 body {
-  background: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(207, 70, 252, 1) 100%
+  background: rgb(252, 176, 69);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 176, 69, 1) 0%,
+    rgba(215, 80, 138, 1) 100%
   );
   width: 100%;
   height: 100%;
@@ -17,15 +17,9 @@ body {
   align-items: center;
 }
 main {
-  background: rgb(122, 100, 249);
-  background: radial-gradient(
-    circle,
-    rgba(122, 100, 249, 1) 18%,
-    rgba(223, 158, 241, 1) 100%
-  );
+  background: rgba(255, 255, 255, 0.3);
   border: 5px solid transparent;
-  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
-  width: 85%;
+  width: 450px;
   height: 85%;
   display: flex;
   justify-content: center;
@@ -34,8 +28,6 @@ main {
 }
 button {
   border-radius: 20px;
-  border: 2px solid #3a4ed5;
-  background-color: rgb(180, 133, 180);
   color: white;
   width: 80px;
   height: 60px;
@@ -47,15 +39,18 @@ div {
   display: flex;
   gap: 30px;
 }
-h1 {
-  font-size: 50px;
-  font-weight: lighter;
-  color: aliceblue;
+.oscuros {
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 0;
+}
+.claros {
+  background-color: transparent;
+  border: 2px solid white;
 }
 input {
   border-radius: 20px;
-  border: 2px solid #3a4ed5;
-  background-color: rgb(180, 133, 180);
+  border: 0;
+  background-color: #303030;
   color: aliceblue;
   width: 80px;
   height: 45px;
