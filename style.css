@@ -2,6 +2,7 @@ html {
   width: 100%;
   height: 100%;
 }
+
 body {
   background: rgb(252, 176, 69);
   background: linear-gradient(
@@ -16,44 +17,60 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 main {
   background: rgba(255, 255, 255, 0.3);
   border: 5px solid transparent;
   width: 450px;
   height: 85%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 20px;
 }
+
 button {
   border-radius: 20px;
   color: white;
-  width: 80px;
-  height: 60px;
   font-size: 25px;
   font-weight: normal;
-  margin-top: 25px;
 }
-div {
-  display: flex;
-  gap: 30px;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  gap: 10px;
 }
+
+.suma {
+  grid-column: 4;
+  grid-row: 3/5;
+}
+
+.igual {
+  grid-column: 4;
+  grid-row: 5/7;
+}
+
+.cero {
+  grid-column: 1/3;
+}
+
 .oscuros {
   background-color: rgba(0, 0, 0, 0.45);
   border: 0;
 }
+
 .claros {
   background-color: transparent;
   border: 2px solid white;
 }
-input {
+
+.resultado {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  grid-column: 1/5;
   border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
   border: 0;
-  background-color: #303030;
-  color: aliceblue;
-  width: 80px;
-  height: 45px;
-  font-size: 30px;
-  text-align: center;
+  color: white;
 }

@@ -6,10 +6,8 @@
   </head>
   <body>
     <main>
-      <div>
-        <input id="numero-1" type="number" name="número" min="0" value="0" />
-      </div>
-      <div>
+      <div class="grid">
+        <div class="resultado">0</div>
         <button onclick="limpiar()" class="oscuros">C</button>
         <button onclick="operacion('division')" class="oscuros">/</button>
         <button onclick="operacion('multiplicacion')" class="oscuros">*</button>
@@ -17,16 +15,16 @@
         <button onclick="" class="claros">7</button>
         <button onclick="" class="claros">8</button>
         <button onclick="" class="claros">9</button>
-        <button onclick="operacion('suma')" class="oscuros">+</button>
+        <button onclick="operacion('suma')" class="oscuros suma">+</button>
         <button onclick="" class="claros">4</button>
         <button onclick="" class="claros">5</button>
         <button onclick="" class="claros">6</button>
         <button onclick="" class="claros">1</button>
         <button onclick="" class="claros">2</button>
         <button onclick="" class="claros">3</button>
-        <button onclick="" class="claros">0</button>
+        <button onclick="" class="claros cero">0</button>
         <button onclick="" class="oscuros">.</button>
-        <button onclick="" class="oscuros">=</button>
+        <button onclick="" class="oscuros igual">=</button>
       </div>
     </main>
     <script src="./calculadora.js"></script>
