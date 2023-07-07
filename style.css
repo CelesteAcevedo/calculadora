@@ -24,20 +24,37 @@ main {
   width: 450px;
   height: 85%;
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 button {
   border-radius: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 25px;
   font-weight: normal;
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.9;
+}
+
+.oscuros:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.claros:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   height: 100%;
+  width: 95%;
   gap: 10px;
+  grid-auto-rows: minmax(75px, auto);
 }
 
 .suma {
@@ -54,16 +71,6 @@ button {
   grid-column: 1/3;
 }
 
-.oscuros {
-  background-color: rgba(0, 0, 0, 0.45);
-  border: 0;
-}
-
-.claros {
-  background-color: transparent;
-  border: 2px solid white;
-}
-
 .resultado {
   display: flex;
   align-items: center;
@@ -73,4 +80,16 @@ button {
   background-color: rgba(0, 0, 0, 0.75);
   border: 0;
   color: white;
+  font-size: 50px;
+  padding-right: 30px;
+}
+
+.oscuros {
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 2px solid transparent;
+}
+
+.claros {
+  background-color: transparent;
+  border: 2px solid white;
 }
