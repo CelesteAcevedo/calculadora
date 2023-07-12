@@ -1,5 +1,13 @@
 let valor = 0;
-let resultado = document.getElementById("resultado");
+let resultado = document.querySelector(".resultado");
+
+function agregarNumero(numero) {
+  if (resultado.innerText === "0") {
+    resultado.innerText = numero;
+  } else {
+    resultado.innerText = resultado.innerText + numero;
+  }
+}
 
 function operacion(tipo) {
   let numero1 = Number(document.getElementById("numero-1").value);
