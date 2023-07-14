@@ -9,22 +9,47 @@ function agregarNumero(numero) {
   }
 }
 
-function operacion(tipo) {
-  let numero1 = Number(document.getElementById("numero-1").value);
-  let numero2 = Number(document.getElementById("numero-2").value);
+function agregarSimbolo(simbolo) {
+  if (resultado.innerText.includes(".") && simbolo === ".") {
+    return;
+  }
 
+  resultado.innerText = resultado.innerText + simbolo;
+}
+
+function operacion(tipo) {
   if (tipo === "suma") {
-    valor = numero1 + numero2;
+    agregarSimbolo(" + ");
   }
 
   if (tipo === "resta") {
-    valor = numero1 - numero2;
+    agregarSimbolo(" - ");
   }
   if (tipo === "multiplicacion") {
-    valor = numero1 * numero2;
+    agregarSimbolo(" * ");
   }
   if (tipo === "division") {
-    valor = numero1 / numero2;
+    agregarSimbolo(" / ");
+  }
+}
+
+function mostrarResultado() {
+  const [numero1, operacion, numero2] = resultado.innerText.split(" ");
+
+  if (operacion === "*") {
+    valor = Number(numero1) * Number(numero2);
+  }
+
+  if (operacion === "/") {
+    valor = Number(numero1) / Number(numero2);
+  }
+
+  if (operacion === "+") {
+    valor = Number(numero1) + Number(numero2);
+  }
+
+  if (operacion === "-") {
+    valor = Number(numero1) - Number(numero2);
   }
   resultado.innerText = valor;
 }

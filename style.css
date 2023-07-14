@@ -87,6 +87,7 @@ button:active {
 .oscuros {
   background-color: rgba(0, 0, 0, 0.45);
   border: 2px solid transparent;
+  font-weight: bold;
 }
 
 .claros {
